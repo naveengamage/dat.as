@@ -13,6 +13,12 @@
 
 // HOME
 
+Route::get('/founder', function()
+{
+	echo "Thanks, you will be redirected to linkedin profile of the founder in 5 seconds.";
+	return header("Refresh: 5;url=https://www.linkedin.com/profile/view?id=170177558");
+});
+
 Route::get('/', function()
 {
 
